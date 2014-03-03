@@ -85,7 +85,11 @@
             <p class="alert"><%= alert %></p> -->
             <%= bootstrap_flash %>
             <%= yield %>
-
+            <% @tweets.each do |tweet| %>
+          <div class="content">
+             <%= tweet.content %>
+          </div>
+            <% end %>
           </div><!--/.well -->
         </div>
       </div><!--/row-->

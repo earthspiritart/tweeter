@@ -6,4 +6,6 @@ class UsersController < ApplicationController
     @tweet = @user.tweets.build
     @tweets = Tweet.all
   end
+
+
 end

@@ -16,12 +16,12 @@ class TweetsController < ApplicationController
 
   
 
-  def destroy
+  # def destroy
 
-      redirect_to user_path(current_path)
+  #     redirect_to user_path(current_path)
   
 
-  end
+  # end
 
   def tweet_params
     params.require(:tweet).permit(:content, :user_id)
