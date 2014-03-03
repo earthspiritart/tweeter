@@ -1,4 +1,6 @@
 Tweeter::Application.routes.draw do
+  resources :users, only:[:index, :show]
+  resources :tweets, only: [:create, :destroy]
   devise_for :users
   root "static_pages#welcome"
   get "static_pages/about"

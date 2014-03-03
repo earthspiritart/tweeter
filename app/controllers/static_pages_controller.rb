@@ -1,4 +1,5 @@
 class StaticPagesController < ApplicationController
+  layout "tweeter"
   
   def welcome
   end
