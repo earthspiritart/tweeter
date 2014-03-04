@@ -1,8 +1,10 @@
 class StaticPagesController < ApplicationController
   layout "tweeter"
   
-  def welcome
-  end
+  # def welcome
+  #   UserMailer.welcome(current_user).deliver
+  #   redirect_to root_path, notice: "welcome"
+  # end
 
   def about
   end

@@ -1,7 +1,26 @@
 <h1>Users Show</h1>
+      <div>
+        <div class="offset1 span4">
+          <div class="well sidebar-nav">
+           
+              <%= form_for(@tweet) do |f| %>
+            <p>
+              <%= f.label(:tweet) %>
+              <%= f.text_field(:content) %>
+            </p>
+            <p>
+              <%=f.submit('Post Tweet') %>
+            </p>
+             <% end %>
 
-      <% @tweets.each do |tweet| %>
+          </div><!--/.well -->
+        </div><!--/span-->
+
+        <div class="span6">
+          <% @tweets.each do |tweet| %>
           <div class="content">
              <%= tweet.content %>
-        <% end %>
+          <% end %>
           </div>
+          </div><!--/span-->
+        </div>
