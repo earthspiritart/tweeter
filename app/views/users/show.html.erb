@@ -1,5 +1,6 @@
 <h1>Users Show</h1>
-      <div>
+    <div class="container-fluid">
+      <div class="row-fluid">
         <div class="offset1 span4">
           <div class="well sidebar-nav">
            
@@ -18,9 +19,10 @@
 
         <div class="span6">
           <% @tweets.each do |tweet| %>
-          <div class="content">
-             <%= tweet.content %>
-          <% end %>
-          </div>
-          </div><!--/span-->
-        </div>
+            <div class="content">
+              <%= tweet.content %>
+              <% end %>
+            </div>
+        </div><!--/span-->
+      </div>
+    </div>
