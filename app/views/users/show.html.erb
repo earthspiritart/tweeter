@@ -1,8 +1,9 @@
-<h1>Users Show</h1>
-    <div class="container-fluid">
+
+   <h1 class="offset1">Users Show</h1>
       <div class="row-fluid">
+        
         <div class="offset1 span4">
-          <div class="well sidebar-nav">
+          <div class="well">
            
               <%= form_for(@tweet) do |f| %>
             <p>
@@ -16,8 +17,9 @@
 
           </div><!--/.well -->
         </div><!--/span-->
-
-        <div class="span6">
+     
+    
+        <div class="span7 well">
           <% @tweets.each do |tweet| %>
             <div class="content">
               <%= tweet.content %>
@@ -25,4 +27,4 @@
             </div>
         </div><!--/span-->
       </div>
-    </div>
+   
