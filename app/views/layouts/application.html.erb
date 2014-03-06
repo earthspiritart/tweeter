@@ -36,12 +36,31 @@
 
     <%= javascript_include_tag "application" %>
   </head>
-  <body>
-
-    
-
+  <body style="margin-top: 40px;">
+    <div class="navbar navbar-fluid-top">
+      <div class="navbar-inner">
+        <!-- <div class="container-fluid">
+            <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span> -->
+            <!-- </a> -->
+                <div class="container nav-collapse">
+                    <ul class="nav">
+                        <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dropdown"</a>
+                            <li>one</li>
+                            <li>two</li>
+                        </ul>
+                    </ul>
+                    <ul class="nav">  
+                      <li class="pull-left"><a href="#">Home</a></li>
+                      <li style="align: auto;"><a href="#">Bird</a></li>
+                    </ul>      
+                </div><!--/.nav-collapse -->
+            </div>
+        <!-- </div> -->
+    </div>
     <div class="container-fluid">
-      
         <%= bootstrap_flash %>
         <%= yield %>
 

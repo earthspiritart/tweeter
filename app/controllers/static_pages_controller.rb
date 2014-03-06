@@ -9,6 +9,12 @@ class StaticPagesController < ApplicationController
   def about
   end
 
+  def newsletter_signup
+    if request.post?
+      UserMailer.newsletter(params).deliver
+    end
+  end
+  
   def tos
   end
 end

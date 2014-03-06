@@ -7,5 +7,9 @@ class UsersController < ApplicationController
     @tweets = @user.tweets
   end
 
-
+  def newsletter
+    if request.post? do
+      UserMailer.newsletter(params).deliver
+    end
+  end
 end

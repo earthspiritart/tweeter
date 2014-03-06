@@ -61,7 +61,8 @@
           <!-- <p class="notice"><%= notice %></p>
           <p class="alert"><%= alert %></p> -->
           <%= bootstrap_flash %>
-          <%= yield %>
+          <%= yield %><br>
+          <%= link_to "Newsletter Sign-up", newsletter_signup_path %>
         </div>
         
         <div class="span4">
@@ -85,6 +86,8 @@
 
                   <%= render "devise/shared/links" %>
             </div>
+              
+
             </div><!--/.well -->
 
 
